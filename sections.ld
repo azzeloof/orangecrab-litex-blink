@@ -7,7 +7,8 @@ __DYNAMIC = 0;
 /* 0x80000 is the offset the bootloader jumps to */
 MEMORY {
 	sram : ORIGIN = 0x10000000, LENGTH = 0x00004000
-	spiflash : ORIGIN = 0x20000000 + 0x80000, LENGTH = 0x00100000
+	spiflash : ORIGIN = 0x40000000, LENGTH = 0x01000000
+	/*spiflash : ORIGIN = 0x20000000 + 0x80000, LENGTH = 0x00100000*/
 }
 
 SECTIONS

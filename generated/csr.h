@@ -10,7 +10,7 @@
 #include <hw/common.h>
 #endif /* ! CSR_ACCESSORS_DEFINED */
 #ifndef CSR_BASE
-#define CSR_BASE 0xe0000000L
+#define CSR_BASE 0x82000000
 #endif
 
 /* ctrl */
@@ -332,46 +332,46 @@ static inline void reboot_addr_write(uint32_t v) {
 }
 
 /* rgb */
-#define CSR_RGB_BASE (CSR_BASE + 0x6800L)
-#define CSR_RGB__R_ADDR (CSR_BASE + 0x6800L)
+#define CSR_RGB_BASE (CSR_BASE + 0x5000)
+#define CSR_RGB__R_ADDR (CSR_BASE + 0x5000)
 #define CSR_RGB__R_SIZE 1
 static inline uint32_t rgb__r_read(void) {
-	return csr_read_simple(CSR_BASE + 0x6800L);
+	return csr_read_simple(CSR_BASE + 0x5000);
 }
 static inline void rgb__r_write(uint32_t v) {
-	csr_write_simple(v, CSR_BASE + 0x6800L);
+	csr_write_simple(v, CSR_BASE + 0x5000);
 }
-#define CSR_RGB__G_ADDR (CSR_BASE + 0x6804L)
+#define CSR_RGB__G_ADDR (CSR_BASE + 0x5004)
 #define CSR_RGB__G_SIZE 1
 static inline uint32_t rgb__g_read(void) {
-	return csr_read_simple(CSR_BASE + 0x6804L);
+	return csr_read_simple(CSR_BASE + 0x5004);
 }
 static inline void rgb__g_write(uint32_t v) {
-	csr_write_simple(v, CSR_BASE + 0x6804L);
+	csr_write_simple(v, CSR_BASE + 0x5004);
 }
-#define CSR_RGB__B_ADDR (CSR_BASE + 0x6808L)
+#define CSR_RGB__B_ADDR (CSR_BASE + 0x5008)
 #define CSR_RGB__B_SIZE 1
 static inline uint32_t rgb__b_read(void) {
-	return csr_read_simple(CSR_BASE + 0x6808L);
+	return csr_read_simple(CSR_BASE + 0x5008);
 }
 static inline void rgb__b_write(uint32_t v) {
-	csr_write_simple(v, CSR_BASE + 0x6808L);
+	csr_write_simple(v, CSR_BASE + 0x5008);
 }
-#define CSR_RGB_DIV_M_ADDR (CSR_BASE + 0x680cL)
+#define CSR_RGB_DIV_M_ADDR (CSR_BASE + 0x500c)
 #define CSR_RGB_DIV_M_SIZE 1
 static inline uint32_t rgb_div_m_read(void) {
-	return csr_read_simple(CSR_BASE + 0x680cL);
+	return csr_read_simple(CSR_BASE + 0x500c);
 }
 static inline void rgb_div_m_write(uint32_t v) {
-	csr_write_simple(v, CSR_BASE + 0x680cL);
+	csr_write_simple(v, CSR_BASE + 0x500c);
 }
-#define CSR_RGB_CONFIG_ADDR (CSR_BASE + 0x6810L)
+#define CSR_RGB_CONFIG_ADDR (CSR_BASE + 0x5010)
 #define CSR_RGB_CONFIG_SIZE 1
 static inline uint32_t rgb_config_read(void) {
-	return csr_read_simple(CSR_BASE + 0x6810L);
+	return csr_read_simple(CSR_BASE + 0x5010);
 }
 static inline void rgb_config_write(uint32_t v) {
-	csr_write_simple(v, CSR_BASE + 0x6810L);
+	csr_write_simple(v, CSR_BASE + 0x5010);
 }
 #define CSR_RGB_CONFIG_BREATH_OFFSET 0
 #define CSR_RGB_CONFIG_BREATH_SIZE 1

@@ -20,19 +20,25 @@ int main() {
     while(1){
 
         /* Delay so we can see what is happening */
-        msleep(200);
+        msleep(1000);
 
         /* Turn LED ON */
-        rgb__r_write(0);
-        rgb__b_write(255);
-        rgb__g_write(255);
-        
-
-        msleep(200);
-
-        /* Turn LED OFF */
+        rgb__r_write(255);
         rgb__b_write(0);
         rgb__g_write(0);
+        
+        msleep(1000);
+
+        rgb__r_write(0);
+        rgb__b_write(255);
+        rgb__g_write(0);
+
+        msleep(1000);
+
+        rgb__r_write(0);
+        rgb__b_write(0);
+        rgb__g_write(255);
+
     }
     
     return 0;

@@ -3,9 +3,9 @@
 //--------------------------------------------------------------------------------
 #ifndef __GENERATED_SOC_H
 #define __GENERATED_SOC_H
-#define CONFIG_CLOCK_FREQUENCY 12000000
+#define CONFIG_CLOCK_FREQUENCY 48000000
 static inline int config_clock_frequency_read(void) {
-	return 12000000;
+	return 48000000;
 }
 #define CONFIG_CPU_HAS_INTERRUPT
 #define CONFIG_CPU_RESET_ADDR 0

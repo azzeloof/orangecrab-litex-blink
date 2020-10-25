@@ -17,10 +17,6 @@ blink_fw.hex: blink_fw.elf
 
 blink_fw.bin: blink_fw.elf
 	$(CROSS)objcopy -O binary blink_fw.elf blink_fw.bin
-	
-#blink_fw.dfu: blink_fw.bin
-#	cp blink_fw.bin blink_fw.dfu
-#	dfu-suffix -v 1209 -p 5bf0 -a blink_fw.dfu
 
 # ---- Clean ----
 

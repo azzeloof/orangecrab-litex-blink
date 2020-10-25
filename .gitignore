@@ -1,4 +1,5 @@
 *.dfu
 *.elf
 *.bin
-
+.vscode
+__pycache__
